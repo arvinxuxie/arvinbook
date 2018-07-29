@@ -162,14 +162,14 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../section1/">
+        <li class="chapter " data-level="3.1" data-path="../systems/">
             
-                <a href="../section1/">
+                <a href="../systems/">
             
                     
                         <b>3.1.</b>
                     
-                    第一章
+                    第一章 计算机系统
             
                 </a>
             
@@ -178,14 +178,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="../section1/example1.html">
+        <li class="chapter " data-level="3.1.1" data-path="../systems/computerbase.html">
             
-                <a href="../section1/example1.html">
+                <a href="../systems/computerbase.html">
             
                     
                         <b>3.1.1.</b>
                     
-                    第一节
+                    第一节 计算机基础
             
                 </a>
             
@@ -331,8 +331,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="git">git</h1>
-<h2 id="1-github&#x4F7F;&#x7528;">1. github&#x4F7F;&#x7528;</h2>
+                                <h2 id="1-github&#x4F7F;&#x7528;">1. github&#x4F7F;&#x7528;</h2>
 <h3 id="11-&#x5FEB;&#x901F;&#x4F7F;&#x7528;github">1.1 &#x5FEB;&#x901F;&#x4F7F;&#x7528;github</h3>
 <p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5E93;</p>
 <pre><code>echo &quot;# arvinbook&quot; &gt;&gt; README.md
@@ -360,7 +359,32 @@ git push -u origin master
 <li>&#x521B;&#x5EFA;&#x9879;&#x76EE;Pages&#x7684;&#x547D;&#x4EE4;&#x884C;</li>
 <li>&#x7528;https&#x52A0;&#x5BC6;&#x9879;&#x76EE;Pages...</li>
 </ol>
-
+<h2 id="2-git&#x4F7F;&#x7528;">2. git<a href="https://git-scm.com/book/zh/v2" target="_blank">&#x4F7F;&#x7528;</a></h2>
+<h3 id="21-git&#x5206;&#x652F;&#x64CD;&#x4F5C;">2.1 git&#x5206;&#x652F;&#x64CD;&#x4F5C;</h3>
+<p>&#x521B;&#x5EFA;&#x65B0;&#x5206;&#x652F;</p>
+<pre><code>git checkout -b pages
+</code></pre><p>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x6709;&#x5206;&#x652F;</p>
+<pre><code>git branch -a
+// &#x67E5;&#x770B;&#x8FDC;&#x7A0B;&#x5206;&#x652F;
+git branch -r
+// &#x7ED3;&#x679C;&#x5E26;*&#x53F7;&#x8868;&#x793A;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;
+*master
+gh-pages
+remote/origin/master
+remote/origin/gh-pages
+</code></pre><p>&#x5220;&#x9664;&#x5206;&#x652F;</p>
+<pre><code>// &#x5220;&#x9664;&#x672C;&#x5730;&#x5206;&#x652F;
+git branch -d gh-pages
+// &#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;
+git branch -r -d origin/gh-pages
+git push origin :gh-pages
+</code></pre><p>&#x672C;&#x5730;&#x5408;&#x5E76;&#x65B0;&#x5206;&#x652F;&#x4EE3;&#x7801;</p>
+<pre><code>//origin&#x662F;&#x672C;&#x5730;&#x9ED8;&#x8BA4;&#x7684;&#x4E00;&#x4E2A;&#x540D;&#x79F0;&#xFF0C;&#x81EA;&#x5DF1;&#x65B0;&#x5EFA;&#x4ED3;&#x5E93;&#x65F6;&#x53EF;&#x4EE5;&#x6539;&#x540D;&#x5B57;
+//&#x5E73;&#x65F6;&#x4F7F;&#x7528;git pull&#x90FD;&#x662F;&#x9ED8;&#x8BA4;&#x5728;master&#x5206;&#x652F;&#x4E0A;&#x62C9;&#x53D6;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x91CC;&#x5728;gh-pages
+git pull origin gh-pages
+</code></pre><p>&#x672C;&#x5730;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#x5230;&#x65B0;&#x7684;&#x5206;&#x652F;</p>
+<pre><code>git push origin gh-pages
+</code></pre>
                                 
                                 </section>
                             
@@ -403,7 +427,7 @@ git push -u origin master
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git使用","level":"2.1","depth":1,"next":{"title":"gitbook使用","level":"2.2","depth":1,"path":"tools/gitbook.md","ref":"tools/gitbook.md","articles":[]},"previous":{"title":"arvinbook","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","localized-footer","include-codeblock","ace","quiz","-lunr","-search","search-pro","collapsible-menu","bibtex-indexed-cite","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"ace":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"localized-footer":{"filename":"./FOOTER.md","hline":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bibtex-indexed-cite":{"path":"/"},"quiz":{"labels":{"check":"提交答案","showExplanation":"显示解释","showCorrect":"显示正确答案","explanationHeader":"释义"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"arvinxu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"ArvinBook学习笔记","bib":[],"gitbook":"*"},"file":{"path":"tools/git.md","mtime":"2018-07-28T05:48:12.635Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-28T05:53:17.845Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git使用","level":"2.1","depth":1,"next":{"title":"gitbook使用","level":"2.2","depth":1,"path":"tools/gitbook.md","ref":"tools/gitbook.md","articles":[]},"previous":{"title":"arvinbook","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","localized-footer","include-codeblock","ace","quiz","-lunr","-search","search-pro","collapsible-menu","bibtex-indexed-cite","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"ace":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"localized-footer":{"filename":"./FOOTER.md","hline":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bibtex-indexed-cite":{"path":"/"},"quiz":{"labels":{"check":"提交答案","showExplanation":"显示解释","showCorrect":"显示正确答案","explanationHeader":"释义"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"arvinxu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"ArvinBook学习笔记","bib":[],"gitbook":"*"},"file":{"path":"tools/git.md","mtime":"2018-07-28T07:01:15.937Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-29T15:15:26.705Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
