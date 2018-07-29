@@ -1,5 +1,3 @@
-# git
-
 ## 1. github使用
 
 ### 1.1 快速使用github
@@ -33,3 +31,42 @@ github Pages使用[说明](https://help.github.com/categories/github-pages-basic
 2. 配置一个开源的项目Pages
 3. 创建项目Pages的命令行
 4. 用https加密项目Pages...
+
+## 2. git[使用](https://git-scm.com/book/zh/v2)
+### 2.1 git分支操作
+创建新分支
+```
+git checkout -b pages
+```
+查看当前所有分支
+```
+git branch -a
+// 查看远程分支
+git branch -r
+// 结果带*号表示当前所在分支
+*master
+gh-pages
+remote/origin/master
+remote/origin/gh-pages
+```
+
+删除分支
+```
+// 删除本地分支
+git branch -d gh-pages
+// 删除远程分支
+git branch -r -d origin/gh-pages
+git push origin :gh-pages
+```
+
+本地合并新分支代码
+```
+//origin是本地默认的一个名称，自己新建仓库时可以改名字
+//平时使用git pull都是默认在master分支上拉取代码，这里在gh-pages
+git pull origin gh-pages
+```
+
+本地提交代码到新的分支
+```
+git push origin gh-pages
+```
